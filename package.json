@@ -22,11 +22,10 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
     "gulp-uglify": "^2.0.1",
-    "gulp-util": "^3.0.7",
-    "node-bourbon": "^4.2.8",
+    "gulp-util": "^3.0.7",    
     "vinyl-ftp": "^0.6.0"
   },
-  "dependencies": {
+  "dependencies": {    
     "browser-sync": "^2.18.11",
     "gulp-imagemin": "^3.2.0",
     "gulp-uglify": "^2.1.2"

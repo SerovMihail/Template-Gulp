@@ -9,7 +9,7 @@ var gulp           = require('gulp'),
 		del            = require('del'),
 		imagemin       = require('gulp-imagemin'),
 		cache          = require('gulp-cache'),
-		autoprefixer   = require('gulp-autoprefixer'),
+		autoprefixer   = require('gulp-autoprefixer'),		
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify");
 
@@ -26,8 +26,9 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'app/libs/bootstrap/dist/js/bootstrap.min.js',
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+				
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
